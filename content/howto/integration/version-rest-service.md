@@ -98,4 +98,4 @@ You do that by adding **(deprecated)** to the service name. Write a description 
 
 You should let clients know that the this version is deprecated (for instance, by publishing release notes).
 
-After a version has been deprecated for a sufficiently long time, you can remove it. All the clients should have moved to the new version in the mean time.
+After a version has been deprecated for a sufficiently long time, you can remove it. All the clients should have moved to the new version in the meantime.
