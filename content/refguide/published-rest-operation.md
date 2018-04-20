@@ -41,6 +41,7 @@ The method and operation path determine [which operation gets executed for a giv
 
 The example location gives an example of a URL on which the operation can be reached. It shows path parameters and query parameter values as placeholders between `{` and `}`.
 
+
 ### 2.4 Microflow
 
 {{% alert type="info" %}}
@@ -75,7 +76,11 @@ If the microflow throws an unhandled exception, the response is **500: Internal 
 
 If security is enabled, then then microflow needs to have at least one role configured to be accessible.
 
-### 2.5 Allowed Roles
+### <a name="is-deprecated"></a>2.5 Is deprecated
+
+If checked, is deprecated, shows the operation as deprecated in the service's [OpenApi (Swagger) documentation page](published-rest-services#interactive-documentation). Consumers SHOULD refrain from usage of the declared operation.
+
+### 2.6 Allowed Roles
 
 The allowed roles define which [module role](module-role) a user must have to be able to access the service.
 
