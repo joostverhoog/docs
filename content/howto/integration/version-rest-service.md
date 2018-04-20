@@ -96,6 +96,8 @@ After you have created a new version of your service, you should mark the old ve
 
 You do that by adding **(deprecated)** to the service name. Write a description of why it was deprecated and what the new version number is in the **Public documentation** of the service.
 
+You should also update the [OpenApi (Swagger) documentation page](published-rest-services#interactive-documentation) of the old version of the service. In this way, the client can check the deprecated operations and the unchanged operations. To do that, go to the old service version and for each changed operation check the flag "Is Deprecated". 
+
 You should let clients know that the this version is deprecated (for instance, by publishing release notes).
 
 After a version has been deprecated for a sufficiently long time, you can remove it. All the clients should have moved to the new version in the meantime.
