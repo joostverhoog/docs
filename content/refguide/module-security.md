@@ -45,9 +45,9 @@ OData access takes the shape of a large matrix showing published OData services 
 
 ## REST Access
 
-REST Access define for each module role whether users with this role are authorized to access REST Resources for each REST Services exposed within the module.
-REST Access takes the shape of a large matrix showing published REST services and modules roles. For each RESR service you can indicate whether or not the module role has access to the published REST service.
-The REST access tab is visualize only when the service has the security set to Require Authentication, see [published REST service](published-rest-service) for more information.
+REST Access defines for each module role whether users with this role are authorized to access REST Resources for each REST Services exposed within the module.
+REST Access takes the shape of a large matrix showing published REST services and modules roles. For each REST service you can indicate whether or not the module role has access to the published REST service.
+The REST access tab is visible only when the service has the security set to Require Authentication, see [published REST service](published-rest-service) for more information.
 
 ## Data Set Access
 
