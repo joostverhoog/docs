@@ -83,7 +83,7 @@ If security is enabled, then then microflow needs to have at least one role conf
 If you check this box, the operation as marked as deprecated in the service's [OpenApi (Swagger) documentation page](published-rest-services#interactive-documentation). This tells clients not to use it anymore.
 
 ### 2.6 Allowed Roles
-
+The allowed roles define which [module role](module-role) a user must have to be able to access the service. 
 
 ### 2.6 Parameters
 
