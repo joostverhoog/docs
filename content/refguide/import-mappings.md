@@ -91,7 +91,7 @@ Initialy the parameter box just shows instuction text: *Click or drag a paramete
 
 To set the parameter data type to entity; click the parameter box, select 'Object' as 'Data type' and then select the entity you wish to use as a parameter's data type.
 Alternatively you can drag the entity from the 'Connector' window to the parameter box.
-To set the parameter's data type to any of the primitive types supported; click the parameter box and choose the desired type.
+To set the parameter's data type to any of the primitive types supported, click the parameter box and choose the desired type.
 
 ![](attachments/16713727/import-mapping-parameter-selection.png)
 
