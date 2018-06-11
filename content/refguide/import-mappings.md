@@ -76,10 +76,32 @@ Having defined the mappings for the attributes, these mappings are also shown in
 | Key | This property specifies whether the value element is used as search key to obtain an object. If a value element is used as search key, you must specify the attribute it maps to. The XML value will be matched to the value of this attribute when searching for an object. Attribute with 'binary' type is not supported to be set as key.
 | Map attributes by name | If this button is clicked, an attempt is made to match attributes by name. A dialog appears reporting what has been changed. |
 
-## Parameter Entity
+## Mapping parameter
 
-Import Mappings have the additional option to pass an incoming entity. This entity is created or retrieved in the microflow that calls an [Import from Mapping](import-mapping-action) action, and is passed as a parameter. This parameter entity serves as input to the Import Mapping, and is not created in the mapping itself. Associations can be set to the parameter entity, and the parameter entity can be used in microflows to obtain objects. In the example of Figure 5, a TestCase entity is passed to the Import Mapping, and is used in the microflow that obtains an Order (Call_PWS_ReturnsOrder). Associations can be set to the input parameter as well.
+{{% alert type="info" %}}
+
+Since version 7.16.0. it is possible to define mapping parameter with primitive data type.
+
+{{% /alert %}}
+
+Import Mappings have the additional option to pass an incoming parameter. This parameter can be a primitive value or an entity. Parameter serves as an input to the Import Mapping and is not created in the mapping itself, but rather passed in from the calling microflow when microflow calls [Import from Mapping](import-mapping-action) action, or by the system when mapping is used with native features; like REST publish.
+
+To define mapping parameter with primitive data type, click on the empty box where it says "Click or drag a parameter entity here (optional)" and select one of the primitive types. To define an entity, you can click on the same box, select 'Object' data type and then select an entity. For entity parameters, same effect can be accomplished by dragging an entity from the connector window.
+
+![](attachments/16713727/import-mapping-parameter-selection.png)
+
+**Figure 5**
+
+When parameter with primitive data type is used, we can map it directly to the entity attributes.
+
+![](attachments/16713727/import-mapping-primitive-parameter-attribute-mapping.png)
+
+**Figure 6**
+
+Parameters can be used in microflows to obtain objects. When entity parameter is used, associations to it can be set. 
+In the example of Figure 7, a TestCase entity is passed to the Import Mapping, and is used in the microflow that obtains an Order (Call_PWS_ReturnsOrder).
 
 ![](attachments/16713727/16843941.png)
 
-**Figure 5**
+**Figure 7**
+
