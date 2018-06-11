@@ -87,10 +87,11 @@ Since version 7.16.0. it is possible to define mapping parameter with primitive 
 Import Mappings have the additional option to receive an incoming parameter. This parameter can be a primitive value or an entity. Parameter is received as an input to the Import Mapping and is not created in the mapping itself. It can be passed in by the calling microflow when microflow uses [Import from Mapping](import-mapping-action) action, or by the system when mapping is used by native features (like REST publish).
 
 To define mapping parameter, click on the parameter box and select the data type for the parameter. 
-Initialy the parameter box just shows instuction text: *Click or drag a parameter entity here (optional)*, once data type is selected it will display a parameter icon with data type displayed underneath.
-To set the parameter data type to entity; click the parameter box, select 'Object' as 'Data type' and then select the entity you wish to use as a parameter data type.
+Initialy the parameter box just shows instuction text: *Click or drag a parameter entity here (optional)*. Once data type is selected it will display a parameter icon with data type displayed underneath the icon.
+
+To set the parameter data type to entity; click the parameter box, select 'Object' as 'Data type' and then select the entity you wish to use as a parameter's data type.
 Alternatively you can drag the entity from the 'Connector' window to the parameter box.
-To set the parameter data type to any of the primitive types supported; click the parameter box and chose the 'Data type'.
+To set the parameter's data type to any of the primitive types supported; click the parameter box and choose the desired type.
 
 ![](attachments/16713727/import-mapping-parameter-selection.png)
 
