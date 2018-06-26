@@ -113,7 +113,7 @@ If authentication is required, you can select which authentication methods you w
     xmlHttp.setRequestHeader("X-Csrf-Token", mx.session.getConfig("csrftoken"));
     xmlHttp.send(null);
     ```
-* Select **Microflow** to create a custom authentication microflow. This microflow is called every time a user want to access a resource.
+* Select **Custom** to create a custom authentication microflow. This microflow is called every time a user want to access a resource.
   * The authentication microflow should return a User
   * The authentication microflow arguments supported are: HTTP Request, HTTP Response and primitive query parameter 
   * In case of an empty user, one of the following action will be performed:
