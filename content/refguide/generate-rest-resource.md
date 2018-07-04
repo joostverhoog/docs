@@ -7,6 +7,8 @@ parent: "published-rest-services"
 
 This feature was introduced in version 7.16.0.
 
+The option to generate **Patch** was introduced in version 7.17.0.
+
 {{% /alert %}}
 
 ## 1 Introduction
@@ -36,12 +38,6 @@ Check the operations that you want to generate:
 * **Post** – allows clients to add a new object
 * **Patch** – allows clients to update an existing object
 * **Delete** – allows clients to delete an existing object
-
-{{% alert type="info" %}}
-
-The generate **Patch** option was introduced in version 7.17.0.
-
-{{% /alert %}}
 
 When you click **OK**, the following items are created:
 
