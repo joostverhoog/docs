@@ -76,6 +76,23 @@ The range determines how many objects are mapped and returned.
 | First | Map and return only the first object. The result of the action will be a single object instead of a list. |
 | Custom | Map and return a given number of objects (limit). The limit is a microflow expression that should result in a number. |
 
+<a name="commit"></a>
+### 3.7 Commit
+
+{{% alert type="info" %}}
+
+This feature was introduced in version 7.18.0.
+
+{{% /alert %}}
+
+Indicate whether the objects that are created or updated should be committed to the database. You can choose one of the following options:
+
+* **Yes** - Commit all changes to the database and check all validation rules and trigger all event handlers.
+* **Yes without events** (default) - Commit all changes to the database, but don't check any validation rules or trigger any event handlers.
+* **No** - Don't commit any changes. If you choose this option, you will have to commit the changes somewhere else in the microflow using the [commit object(s) action](committing-objects), or the changes will be lost.
+
+This option is only available when them import mapping creates or updates persistable entities.
+
 ## 4 Validation
 
 {{% alert type="info" %}}
