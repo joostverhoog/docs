@@ -146,7 +146,7 @@ The allowed roles define which [module role](module-role) a user must have to be
 CORS (Cross-Origin Resource Sharing)  is a mechanism that uses additional HTTP headers to tell a browser to let a web application running at one origin (domain) have permission to access selected resources from a server at a different origin. More information can be found here [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 By enabling the Cors flag, all the operation of the service will provide CORS header.   
 We are supporting both simple and preflighted requests; if no options method is find, we will create one otherwise the definend method will be executed and we will just append the cors headers. 
-Select CORS setting to modify the default bheaviour.
+Select [CORS setting](cors-settings) to modify the default bheaviour .
 
 ## 4 Resources
 
