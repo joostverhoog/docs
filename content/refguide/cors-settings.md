@@ -1,29 +1,26 @@
 ---
-title: "Cors settings"
+title: "CORS settings"
 parent: "published-rest-services"
 ---
 
 {{% alert type="info" %}}
 
-The **Cors setting** feature was introduced in version 7.18.0.
+The **CORS settings** feature was introduced in version 7.18.0.
 
 {{% /alert %}}
 
 ## 1 Introduction
-This dialog allows to custumize some property of Cross-Origin Resource Sharing headers. 
 
-## 2  Allowed Origins
-If **All** is selected, to all the request with an origin Header, the response header 'Access-Control-Allow-Origin' will be the origin.
-If a constant is selected: only if the Origin match an AllowedOrigins then it will be returned. It is possible to list multiple origins sepearated by comma.
+When you enable CORS in a [published REST service](published-rest-service), by default all websites on all servers are allowed to access your service. The CORS settings dialog allows you to configure this type of access on a more detailed level.
+
+## 2 Allowed Origins
+
+Here you can specify which websites are allowed to access your service. You can either select **All**, or specify a constant that contains a comma-separated list of host names.
 
 ## 3 Max Age
-If **24 Hours** is selected, then the 'Access-Control-Max-Age' will be setted to 86400 seconds
-If a costant is selected, the time define in second will be used.
+
+Here you can choose how long a browser is allowed to remember these settings before checking whether there are new CORS settings. A longer time is good for performance, because the browser will perform fewer requests. However, if you change the CORS settings, these changes will not take effect in all browsers until this time has passed.
 
 ## 4 Allow Credentials
-if is checked, then the response header 'Access-Control-Allow-Credentials' will be set to true, it is set to false vice vera.
 
-## 5 Other Headers
-The 'Access-Control-Allow-Methods' is computed by selecting  all possible methods containded in the operations of the service.
-The 'Access-Control-Allow-Headers' will always return all headers contained in the request header 'Access-Control-Request-Headers'
-
+Check this box to indicate that the browser is allowed to send cookies, authorization headers and/or client certificates to this service.
