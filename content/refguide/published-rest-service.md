@@ -141,7 +141,7 @@ There are three possible outcomes of the authentication microflow
 
 The allowed roles define which [module role](module-role) a user must have to be able to access the service. This option is only available when **Requires authentication** is set to **Yes**.
 
-### 4 Enable CORS
+## 4 Enable CORS
 
 Check this box when your service needs to be available on websites other than your own.
 
