@@ -119,6 +119,10 @@ The following settings influence the behavior of the Amazon S3 Storage Service m
 | com.mendix.storage.s3.UseV2Auth | Let the authentication policy use 'Signature Version 2' instead of the default 'Signature Version 4'. Set this setting to 'true' when the endpoint does not support 'Signature Version 4'. | false |
 | com.mendix.storage.s3.EncryptionKeys | List of keys which can be used to encrypt and decrypt data at rest in S3\. The right key to decrypt the data with is automatically selected depending on with which key it was encrypted. Each encryption key consists of a key id, the encryption algorithm and the actual key (Base64 encoded). Example: ![](attachments/Custom+Settings/code_snippet_2.png) |   |
 | com.mendix.storage.s3.MaxConnections | Overrides the default maximum connections limit in the Amazon S3 service. The default value is enough for most applications, so we do not recommend explicitly setting this to a custom value unless a larger maximum connections limit is absolutely necessary. | [DEFAULT_MAX_CONNECTIONS](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/ClientConfiguration.html#DEFAULT_MAX_CONNECTIONS) field of the ClientConfiguration interface in the AWS SDK for Java. |
+| com.mendix.storage.s3.ClientExecutionTimeout | Define the timeout for a request | [DEFAULT_CLIENT_EXECUTION_TIMEOUT](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/ClientConfiguration.html#DEFAULT_CLIENT_EXECUTION_TIMEOUT) field of the ClientConfiguration interface in the AWS SDK for Java.
+| com.mendix.storage.s3.ConnectionTimeout | Sets the amount of time to wait (in milliseconds) when initially establishing a connection before giving up and timing out. A value of 0 means infinity, and is not recommended. | [DEFAULT_CONNECTION_TIMEOUT](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/ClientConfiguration.html#DEFAULT_CONNECTION_TIMEOUT) field of the ClientConfiguration interface in the AWS SDK for Java. 
+| com.mendix.storage.s3.SocketTimeout | Sets the amount of time to wait (in milliseconds) for data to be transfered over an established, open connection before the connection times out and is closed. | [DEFAULT_SOCKET_TIMEOUT](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/ClientConfiguration.html#DEFAULT_SOCKET_TIMEOUT) field of the ClientConfiguration interface in the AWS SDK for Java. 
+| com.mendix.storage.s3.RequestTimeout | Sets the amount of time to wait (in milliseconds) for the request to complete before giving up and timing out. | [DEFAULT_REQUEST_TIMEOUT](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/ClientConfiguration.html#DEFAULT_REQUEST_TIMEOUT) field of the ClientConfiguration interface in the AWS SDK for Java. 
 
 ## 6 Microsoft Azure SQL
 
@@ -158,6 +162,8 @@ These settings can be used to store files using the Microsoft Azure blob storage
 | com.mendix.storage.azure.Container | Name of the container containing the blob. The container is created if it does not exist yet. |   |
 | com.mendix.storage.azure.ParallelismFactor | Maximum number of parallel multi-part file uploads / downloads. We advise you not to change this setting unless you experience slow file transfers for large files. Choosing larger values will lead to higher memory usage. | 5 |
 |com.mendix.storage.azure.UseHttps| Introduced in version 7.7. For enabling or disabling secure connections using HTTPS. Can be `true` or `false`. | `true` |
+| com.mendix.storage.azure.TimeoutIntervalInMs | Sets the timeout to use when making this request.  | null  |
+| com.mendix.storage.azure.MaximumExecutionTimeInMs | Sets the maximum execution time to use when making this request.  |null |
 
 {{% alert type="warning" %}}
 
