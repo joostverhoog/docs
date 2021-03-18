@@ -39,7 +39,7 @@ You can create associations between local [persistable entities](persistability#
 
 ### 2.2 Consumed OData Service
 
-When an external entity is dragged into the domain model, the  **Consumed Odata** document that is added to the model will display the values of the metadata contract from the service endpoint.
+When an external entity is dragged into the domain model, the  **Consumed OData** document that is added to the model will display the values of the metadata contract from the service endpoint.
 
 In the **Data Hub** pane the service and the entity will be shown as consumed both in the search results pane and also in the **Project** panels. 
 
