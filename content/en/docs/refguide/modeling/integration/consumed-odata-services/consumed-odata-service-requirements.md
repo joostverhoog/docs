@@ -94,9 +94,7 @@ When a generalization and a specialized entity are exposed in the same service. 
 
 ### 3.4 Binary Attributes
 
-The binary data format is supported in the form of *media entities*. When a media entity is dragged into the domain model, a corresponding external entity is created. The entity will have a `contents` attribute with the binary data.
-
-Currently, the binary data can only be accessed by Java actions.
+The binary data format is supported in the form of [media entities](https://docs.oasis-open.org/odata/odata-csdl-xml/v4.01/odata-csdl-xml-v4.01.html#sec_MediaEntityType). When a media entity is dragged into the domain model, a corresponding external entity is created. The entity will have a `contents` attribute with the binary data. The entity can be used wherever a file document is expected.
 
 ### 3.5 Associations
 
