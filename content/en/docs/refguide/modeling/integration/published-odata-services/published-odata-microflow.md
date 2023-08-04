@@ -7,3 +7,8 @@ tags: ["studio pro","OData","publish"]
 
 # 1 Introduction
 
+# 2 Adding or Editing a Published Microflow
+
+## 2.3 Return Type
+
+The return type of the published microflow is not editable as it is determined by the microflow itself. Changing this has to be done in the microflow, and would mean a change of the metadata of the published OData service.
